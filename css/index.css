@@ -1,0 +1,151 @@
+/* Base styles */
+body {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    height: 100vh;
+    background-color: rgba(168, 50, 129, 0.925);
+    margin: 0;
+    padding: 0;
+  }
+  /* Navigation */
+  #navigation {
+    background-color: #9c9696;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  #navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #navigation ul li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  #navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Name */
+  #name {
+    text-align: left;
+    font-size: 3rem;
+    font-style: italic;
+    padding-top: 2ch;
+    color: #142019;
+  }
+  
+  /* Sections */
+  section {
+    padding: 1rem;
+    margin-bottom: 3rem;
+  }
+  h2 {
+      font-weight: bold;
+      font-size: 2rem;
+  }
+  a {
+      color: rgb(247, 252, 249);
+  }
+  
+  /* About Section */
+  #about {
+      text-align: center;
+  }
+  #about h2 {
+      color: rgb(7, 201, 245);
+      font-size: 2rem;
+      font-weight: 950;
+  }
+  
+  /* Experience Section */
+  #experience ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0.5em;
+      background-color: rgb(219, 230, 122);
+      color: rgb(90, 58, 7);
+      padding: 1cm;
+      border-radius: 0.5em;
+      border-color: rgb(68, 18, 115);
+      border-style: solid;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px; /* Space between rows and columns */
+  }
+  .grid-item {
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(105, 108, 108);
+    color: white;
+    border-radius: 0.8em;
+    padding: 0.5em;
+  }
+  .one-experience {
+    display: flex;
+    flex-direction: column;
+  }
+  .date {
+    font-weight: bold;
+    margin-right: 1em;
+    min-width: fit-content;
+  }
+  /* Connect Section */
+  #connect {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    padding: 0.5em;
+    color: whitesmoke;
+    background-color: aqua;
+    border-radius: 0.8em;
+    }
+  
+  
+  /* Media Queries */
+  
+  @media screen and (min-width: 768px) {
+  
+    /* Tablet Styles */
+    #name {
+        font-size: 3rem; /* 1st change */
+    }
+  
+    h2 {
+        font-size: 3rem; /* 1st change */
+    }
+  
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px; /* Space between rows and columns */
+    }
+  
+  }
+  
+  @media screen and (min-width: 1024px) {
+  
+    /* Desktop Styles */
+    #navigation ul li {
+        margin-right: 20px; /* 1st change */
+    }
+  
+    #name {
+        font-size: 4rem; /* 1st change */
+    }
+  
+    h2 {
+        font-size: 4rem; /* 1st change */
+    }
+  } 
+   
