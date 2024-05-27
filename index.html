@@ -1,99 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My SuperMega CatAPI</title>
-    <meta name="description" content="Super Page" />
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
-  <body>
-    <nav id="navigation">
-      <ul>
-        <li><a href="#About">About myCAT </a></li>
-        <li><a href="#Experience">Experience </a></li>
-        <li><a href="#Skills">Skills of myCAT</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Connect">Connect with myCAT</a></li>
-      </ul>
-    </nav>
+<html lang="en">
 
-    <h1 id="name">CATik</h1>
-    <img src="./images/Korat.jpg" alt="Korat" height="511" width="768" />
-    <section id="About">
-      <h2>About</h2>
-      <p>I love milkkkk! very much</p>
-    </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCatAPI App</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./files/icons/cat3.png">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
 
-    <section id="Experience" class="Experience">
-      <h2>Experience</h2>
-      <div class="grid-container">
-        <div class="grid-item">
-          <h3 class="date">1800-1850</h3>
-          <div class="one-experience">
-            <h3 class="one-exp-heading">Senior CAT</h3>
-            <p class="exp-description">
-              Building a cat house
-            </p>
-          </div>
-        </div>
-        <div class="grid-item">
-          <h3 class="date">1770-1800</h3>
-          <div class="one-experience">
-            <h3 class="one-exp-heading">Junior CAT</h3>
-            <p class="exp-description">eating anf playing</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="header__logo">
+                <img src="./images/Korat.jpg" alt="cat's picture" width="500" height="300">
+                <h1>TheCatAPI&nbsp;App</h1>
+            </div>
+            <div class="header__switch-model">
+                <label for="images"><input type="radio" id="images" name="model" value="images" checked>Cats
+                    images</label>
+                <label for="breeds"><input type="radio" id="breeds" name="model" value="breeds">Cats breeds</label>
+            </div>
+        </header>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        
-      </ul>
-    </section>
+        <main>
+            <section class="images">
+                <h2>Cats Images</h2>
+                <h3>Enjoy random images of awesome caaaaats :)!</h3>
+                <div class="section__container">
 
-    <section id="Projects">
-      <h2>Projects</h2>
-      <ul>
-        
-      </ul>
-    </section>
+                </div>
+            </section>
+            <section class="breeds">
+                <h2>Cats Breeds</h2>
+                <h3>All you need to know about cats breeds!</h3>
+                <div class="section__container">
 
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
 
-
-    <section id="Connect">
-      <h2>Connect</h2>
-      <ul class="Connect">
-          <li><a href="mailto:cat@gmail.com">Email</a></li>
-          <li><a href="https://github.com/cat">GitHub</a></li>
-      </ul>
-  </section>
-
-
-  <section id="LeaveMessage">
-    <h2>Leave a Message</h2>
-    <form name='leave_message'>
-      <label for="usersName">Name:</label>
-      <input type="text" id="usersName" name="usersName" required><br>
-      
-      <label for="usersEmail">Email:</label>
-      <input type="email" id="usersEmail" name="usersEmail" required><br>
-      
-      <label for="usersMessage">Message:</label>
-      <textarea id="usersMessage" name="usersMessage" required></textarea><br>
-      
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
-  <section id="messages">
-    <h2>Messages</h2>
-    <ul>
-      
-    </ul>
-  </section>
-  
-  
-  <script src='./js/index.js'></script>
-  </body>
 </html>
