@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'KaushanScript';
+  font-family: "KaushanScript";
   src: url("../files/fonts/KaushanScript-Regular.ttf");
   font-weight: 400;
 }
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  font-family: 'KaushanScript';
+  font-family: "KaushanScript";
   font-size: 16px;
   background-color: var(--color-light);
   color: var(--color-dark);
@@ -37,7 +37,7 @@ body {
 }
 
 h1 {
-  font-family: 'KaushanScript';
+  font-family: "KaushanScript";
   font-size: 40px;
   line-height: 48px;
   text-align: center;
@@ -46,14 +46,13 @@ h1 {
 }
 
 h2 {
-  font-family: 'KaushanScript';
+  font-family: "KaushanScript";
   font-size: 26px;
   line-height: 34px;
   text-align: center;
   color: var(--color-brown);
   margin: 0;
 }
-
 
 /* ---------- Header ---------- */
 
@@ -82,7 +81,7 @@ h2 {
 }
 
 .header__switch-model {
-  font-family: 'Exo2 Medium Italic';
+  font-family: "Exo2 Medium Italic";
   font-size: 20px;
   line-height: 24px;
 
@@ -130,7 +129,6 @@ section {
   align-items: stretch;
   gap: 20px;
 }
-
 
 /* ---------- Images Section ---------- */
 
@@ -184,7 +182,7 @@ section {
 }
 
 .breeds__card p span {
-  font-family: 'Exo2 Medium Italic';
+  font-family: "Exo2 Medium Italic";
 }
 
 /* ---------- Loading Spinner ---------- */
@@ -204,7 +202,7 @@ section {
 }
 
 .circle:before {
-  content: '';
+  content: "";
   display: block;
   margin: 0 auto;
   width: 15%;
@@ -303,65 +301,59 @@ section {
 }
 
 @keyframes circleBounceDelay {
-
   0%,
   80%,
   100% {
-      transform: scale(0);
+    transform: scale(0);
   }
 
   40% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
 /* ---------- max-width: 940px ---------- */
 
 @media only screen and (max-width: 940px) {
-
   .header {
-      flex-direction: column;
-      row-gap: 20px;
+    flex-direction: column;
+    row-gap: 20px;
   }
 }
-
 
 /* ---------- max-width: 700px ---------- */
 
 @media only screen and (max-width: 700px) {
-
   .section__container {
-      flex-direction: column;
-      flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   .images__card,
   .breeds__card {
-      width: 100%;
+    width: 100%;
   }
 }
 
 /* ---------- max-width: 540px ---------- */
 
 @media only screen and (max-width: 540px) {
-
   .header__logo {
-      flex-direction: column;
-      row-gap: 10px;
+    flex-direction: column;
+    row-gap: 10px;
   }
 }
 
 /* ---------- max-width: 400px ---------- */
 
 @media only screen and (max-width: 400px) {
-
   h1 {
-      font-size: 30px;
-      line-height: 34px;
+    font-size: 30px;
+    line-height: 34px;
   }
 
   .header__switch-model {
-      flex-direction: column;
-      row-gap: 10px;
+    flex-direction: column;
+    row-gap: 10px;
   }
 }

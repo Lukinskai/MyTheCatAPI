@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyCatAPI App</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./files/icons/cat3.png">
-    <link rel="stylesheet" href="./css/index.css">
-</head>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./files/icons/cat3.png"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
 
-<body>
+  <body>
     <div class="page-wrapper">
-        <header class="header">
-            <div class="header__logo">
-                <img src="./images/catik.jpg" alt="cat's picture" width="300" height="300">
-                <h1>TheCatAPI&nbsp;App</h1>
-            </div>
-            <div class="header__switch-model">
-                <label for="images"><input type="radio" id="images" name="model" value="images" checked>Cats
-                    images</label>
-                <label for="breeds"><input type="radio" id="breeds" name="model" value="breeds">Cats breeds</label>
-            </div>
-        </header>
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="./images/catik.jpg"
+            alt="cat's picture"
+            width="300"
+            height="300"
+          />
+          <h1>TheCatAPI&nbsp;App</h1>
+        </div>
+        <div class="header__switch-model">
+          <label for="images"
+            ><input
+              type="radio"
+              id="images"
+              name="model"
+              value="images"
+              checked
+            />Cats images</label
+          >
+          <label for="breeds"
+            ><input type="radio" id="breeds" name="model" value="breeds" />Cats
+            breeds</label
+          >
+        </div>
+      </header>
 
-        <main>
-            <section class="images">
-                <h2>Cats Images</h2>
-                <h3>Enjoy random images of awesome caaaaats :)!</h3>
-                <div class="section__container">
-
-                </div>
-            </section>
-            <section class="breeds">
-                <h2>Cats Breeds</h2>
-                <h3>All you need to know about cats breeds!</h3>
-                <div class="section__container">
-
-                </div>
-            </section>
-        </main>
+      <main>
+        <section class="images">
+          <h2>Cats Images</h2>
+          <h3>Enjoy random images of awesome caaaaats :)!</h3>
+          <div class="section__container"></div>
+        </section>
+        <section class="breeds">
+          <h2>Cats Breeds</h2>
+          <h3>All you need to know about cats breeds!</h3>
+          <div class="section__container"></div>
+        </section>
+      </main>
     </div>
     <script src="./js/index.js"></script>
-</body>
-
+  </body>
 </html>
