@@ -5,11 +5,12 @@ const radios = document.querySelector(".header__switch-model");
 const modelToSectionMap = new Map();
 modelToSectionMap.set("images", imagesSection);
 modelToSectionMap.set("breeds", breedsSection);
+console.log("modelToSectionMap ===> ", modelToSectionMap);
 
 const modelToEndpointMap = new Map();
 modelToEndpointMap.set(
   "images",
-  "/images/search?limit=10&breed_ids=beng,abys,esho&"
+  "/images/search?limit=30&breed_ids=beng,kora,birm,tonk,sibe,sing,norw,nebe,jbob,mala&"
 );
 //modelToEndpointMap.set('images', '/images/search?limit=10&breed_ids&');
 // modelToEndpointMap.set('images', '/images/search?limit=30&');
@@ -71,7 +72,10 @@ async function fetchData(url, model, container) {
     .then((data) => {
       console.log("data  ", data);
 
-      data.forEach((el) => appendDataToArray(el, model));
+      data.forEach((el) => {
+        console.log("el =====> ", el);
+        appendDataToArray(el, model)
+      });
       // create html elements and append them to the section container
       container.innerHTML = "";
       currentDataArray.forEach((el) =>
@@ -113,14 +117,15 @@ const appendDataToArray = (data, model) => {
       const lifeSpan = data.life_span;
       const temperament = data.temperament;
       const origin = data.origin;
-      // const image = data.image.url;
+      const image = data.image.url;
+      console.log("image ===> ", image);
       const weight = data.weight.imperial;
       const description = data.description;
 
       // const height = data.height.imperial;
       currentDataArray.push({
         breed: name,
-        //'imageUrl': image,
+        imageUrl: image,
         bredFor: bredFor,
         breedGroup: breedGroup,
         lifeSpan: lifeSpan,
@@ -153,6 +158,7 @@ const createDataCard = (data, model) => {
       card.classList.add("breeds__card");
       const breedImg = document.createElement("img");
       breedImg.src = data.imageUrl;
+      console.log("breedImg ====> ", breedImg);
       breedImg.alt = `Picture of ${data.breed}`;
       card.appendChild(breedImg);
       const breed = document.createElement("h4");
