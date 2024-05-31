@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "KaushanScript";
-  src: url("../files/fonts/KaushanScript-Regular.ttf");
-  font-weight: 400;
+  font-family: "CookieCrisp";
+  src: url("../files/fonts/CookieCrisp-L36ly.ttf");
+  font-weight: 500;
 }
 
 :root {
@@ -25,8 +25,8 @@ html {
 }
 
 body {
-  font-family: "KaushanScript";
-  font-size: 16px;
+  font-family: "CookieCrisp";
+  font-size: 24px;
   background-color: var(--color-light);
   color: var(--color-dark);
 }
@@ -37,7 +37,7 @@ body {
 }
 
 h1 {
-  font-family: "KaushanScript";
+  font-family: "CookieCrisp";
   font-size: 40px;
   line-height: 48px;
   text-align: center;
@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-  font-family: "KaushanScript";
+  font-family: "CookieCrisp";
   font-size: 26px;
   line-height: 34px;
   text-align: center;
@@ -183,6 +183,66 @@ section {
 
 .breeds__card p span {
   font-family: "Exo2 Medium Italic";
+}
+
+
+/* Vote section */
+
+.vote {
+  display: none;
+  /* width: 100%; */
+  max-width: 1440px;
+}
+
+.maincontent{
+  padding-top: 0%;
+  padding-left:0%;
+}
+
+.red {
+  border-color: red ;
+  padding: 1%;
+  border-style: solid;
+  border-width: medium;
+}
+.green {
+  border-color: green ;
+  padding: 1%;
+  border-style: solid;
+  border-width: medium;
+}
+.col {
+  border-color: red ;
+  padding: 1%;
+  border-style: solid;
+  border-width: medium;
+}
+.col-lg{
+    height: 200px;
+    /* width: 200px; */
+    overflow: hidden;
+    margin: 10px 0;
+    position: relative; 
+    flex-basis: 30%;
+}
+
+  /* Images crop and center to col-lg box up to 1000% centering */
+.col-lg img{
+  display:block;
+    /* position: absolute;
+    left: -1000%;
+    right: -1000%;
+    top: -1000%;
+    bottom: -1000%; 
+    margin: auto; */
+    min-height: 100%;
+    /* min-width: 100%;   */
+}
+.imgrid {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* ---------- Loading Spinner ---------- */

@@ -22,7 +22,7 @@
             width="300"
             height="300"
           />
-          <h1>TheCatAPI&nbsp;App</h1>
+          <h1>What's your favorite cat?&nbsp;</h1>
         </div>
         <div class="header__switch-model">
           <label for="images"
@@ -35,22 +35,48 @@
             />Cats images</label
           >
           <label for="breeds"
-            ><input type="radio" id="breeds" name="model" value="breeds" />Cats
-            breeds</label
-          >
+            ><input type="radio" id="breeds" name="model" value="breeds" />Cat
+            breeds</label>
+            <label for="vote"
+            ><input type="radio" id="vote" name="model" value="vote" />Vote on a cat</label>
         </div>
       </header>
 
       <main>
         <section class="images">
           <h2>Cats Images</h2>
-          <h3> My favorits cats breeds:)! </h3>
-          <div class="section__container"></div>
+          <h3> We all loveeee cats:)! </h3>
+          <div class="section__container">
+
+          </div>
         </section>
         <section class="breeds">
-          <h2>Cats Breeds</h2>
-          <h3>All you need to know about cats breeds!</h3>
-          <div class="section__container"></div>
+          <h2>Cat Breeds</h2>
+          <h3>You can find cats breeds here!</h3>
+          <div class="section__container">
+            
+          </div>
+        </section>
+        <section class="vote">
+          <h2>Vote on a cat</h2>
+          <h3>Yuo can vote here!</h3>
+          <!-- <div class="section__container"> -->
+            <div id="vote-options" class="vote-options">
+              <button onClick="vote(1)">Vote Up </button>
+              <button onClick="vote(-1)">Vote Down </button>
+              <!-- <button onClick="showHistoricVotes()">History </button> -->
+                
+            <div>
+              <img id="image-to-vote-on" class="col-lg"></img>
+              </div>
+              
+              </div>
+            
+              <div id="vote-results"  class="vote-results">
+              <button onClick="showVoteOptions()">Show Vote Options</button>
+                <div id="grid" class="imgrid"></div>
+             </div>
+          </div>
         </section>
       </main>
     </div>
