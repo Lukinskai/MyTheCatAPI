@@ -8,7 +8,7 @@ const modelToSectionMap = new Map();
 modelToSectionMap.set("images", imagesSection);
 modelToSectionMap.set("breeds", breedsSection);
 modelToSectionMap.set("vote", voteSection);
-console.log("modelToSectionMap ===> ", modelToSectionMap);
+//console.log("modelToSectionMap ===> ", modelToSectionMap);
 
 const modelToEndpointMap = new Map();
 // modelToEndpointMap.set(
@@ -82,10 +82,10 @@ async function fetchData(url, model, container) {
       return response.json();
     })
     .then((data) => {
-      console.log("data  ", data);
+      //console.log("data  ", data);
 
       data.forEach((el) => {
-        console.log("el =====> ", el);
+        //console.log("el =====> ", el);
         appendDataToArray(el, model)
       });
       // create html elements and append them to the section container
@@ -130,7 +130,7 @@ const appendDataToArray = (data, model) => {
       const temperament = data.temperament;
       const origin = data.origin;
       const image = data.image && data.image.url ? data.image.url : '';
-      console.log("image ===> ", image);
+      //console.log("image ===> ", image);
       const weight = data.weight.imperial;
       const description = data.description;
 
@@ -170,7 +170,7 @@ const createDataCard = (data, model) => {
       card.classList.add('breeds__card');
       const breedImg = document.createElement('img');
       breedImg.src = data.imageUrl;
-      console.log("breedImg ====> ", breedImg);
+      //console.log("breedImg ====> ", breedImg);
       breedImg.alt = `Picture of ${data.breed}`;
       card.appendChild(breedImg);
       const breed = document.createElement("h4");
